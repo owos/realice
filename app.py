@@ -51,7 +51,7 @@ def gen_freq(text):
     return word_freq
 
 
-df= pd.read_csv(r'data\project_realice_clean_final.csv')
+df= pd.read_csv(r'data/project_realice_clean_final.csv')
 
 
 
