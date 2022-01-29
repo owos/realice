@@ -72,7 +72,7 @@ with st.container():
         fig.update_layout(barmode = 'group', )
         fig.update_xaxes(title_text="Age Range")
         config = {'displayModeBar' : False}
-        st.plotly_chart(fig, use_container_width=True, config=config)
+        st.plotly_chart(fig, use_container_width=True)
         # 
                 
         st.subheader('Frequency of Negative Police Encounter')
@@ -80,7 +80,7 @@ with st.container():
         fig3.update_layout(barmode = 'group')
         fig3.update_xaxes(title_text="Age Range")
 
-        st.plotly_chart(fig3, use_container_width=True, config=config)#
+        st.plotly_chart(fig3, use_container_width=True)#
 
         wcc = WordCloud(width=550, height=330, max_words=50, background_color="white", colormap = "plasma").generate_from_frequencies(real_words)
         plt.figure(figsize=(12, 14))
@@ -89,23 +89,23 @@ with st.container():
         fig2.update_xaxes(visible=False)
         fig2.update_yaxes(visible=False)
         st.subheader('Word Cloud of Top 50 words in Jobs Dataset')
-        st.plotly_chart(fig2, config=config)
+        st.plotly_chart(fig2)
         
 
     with col2:
 
         st.subheader('Counts of Personal Police Harassment by Year')
         fig4 = go.Figure(data3)                    
-        fig4.update_layout(barmode = 'group', )
+        fig4.update_layout(barmode = 'group' )
         fig4.update_xaxes(title_text="Year")
         #For you to take a look at the result use
-        st.plotly_chart(fig4, use_container_width=True, config=config)
+        st.plotly_chart(fig4, use_container_width=True)
 
         st.subheader('Counts of Others Police Harassment by Year')
         fig5 = go.Figure(data4)                    
         fig5.update_layout(barmode = 'group')
         fig5.update_xaxes(title_text="Year")  
-        st.plotly_chart(fig5, use_container_width=True, config=config)  
+        st.plotly_chart(fig5, use_container_width=True)  
         
         
 
