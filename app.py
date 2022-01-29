@@ -88,7 +88,7 @@ with st.container():
         fig2 =express.imshow(wcc)
         fig2.update_xaxes(visible=False)
         fig2.update_yaxes(visible=False)
-        st.subheader('Word Cloud of Top 50 words in Jobs Dataset')
+        st.subheader('Word Cloud of Top 50 One Word to Describe the Police')
         st.plotly_chart(fig2)
         
 
